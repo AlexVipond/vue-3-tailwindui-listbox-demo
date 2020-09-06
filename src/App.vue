@@ -43,6 +43,7 @@
 </template>
 
 <script>
+import { reactive } from 'vue'
 import useListbox from '@tailwindui/vue/src/useListbox'
 
 export default {
@@ -63,7 +64,7 @@ export default {
           })
   
     return {
-      listbox,
+      listbox: reactive(listbox),
     }
   }      
 }
